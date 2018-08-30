@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="음성인식 중국어 번역"
+        android:textColor="@color/colorAccent"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/et_source"
+        android:layout_width="344dp"
+        android:layout_height="130dp"
+        android:layout_alignStart="@+id/tv_result"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:background="#f4f5ba"
+        android:editable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="top"
+        android:hint="Voice"
+        android:scrollbars="vertical"
+        tools:focusableInTouchMode="false" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="344dp"
+        android:layout_height="130dp"
+        android:layout_below="@+id/et_source"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:background="#cee6ff"
+        android:editable="false"
+        android:textIsSelectable="true"
+        android:hint="Result"
+        android:scrollbars="vertical"
+        android:textColor="#000"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bt_KC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp" />
+
+    <Button
+        android:id="@+id/bt_CK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_result"
+        android:layout_below="@+id/tv_result"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="18dp"
+        android:text="중->한" />
+
+    <Button
+        android:id="@+id/bt_KC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/bt_CK"
+        android:layout_alignBottom="@+id/bt_CK"
+        android:layout_alignEnd="@+id/tv_result"
+        android:layout_marginEnd="37dp"
+        android:text="한->중" />
+
+    <TextView
+        android:id="@+id/tv_Record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_result"
+        android:layout_alignBottom="@+id/tv_result"
+        android:layout_centerHorizontal="true"
+        android:text="말씀하세요."
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="70sp"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/bt_translation"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/tv_result"
+        android:layout_alignEnd="@+id/et_source"
+        android:text="번역" />
+
+</RelativeLayout>

@@ -1,0 +1,1 @@
+"# STT_ChineseTranslation" 
